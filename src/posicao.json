@@ -1,0 +1,1190 @@
+[
+  {
+    "id": 25,
+    "placa": "TESTE001",
+    "data": "2018-12-12T02:04:03.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649141,
+    "longitude": -51.469891,
+    "ignicao": false
+  },
+  {
+    "id": 26,
+    "placa": "TESTE001",
+    "data": "2018-12-12T02:34:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649175,
+    "longitude": -51.4699098,
+    "ignicao": false
+  },
+  {
+    "id": 27,
+    "placa": "TESTE001",
+    "data": "2018-12-12T03:04:09.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649551,
+    "longitude": -51.4699588,
+    "ignicao": false
+  },
+  {
+    "id": 28,
+    "placa": "TESTE001",
+    "data": "2018-12-12T03:34:12.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649138,
+    "longitude": -51.4698871,
+    "ignicao": false
+  },
+  {
+    "id": 29,
+    "placa": "TESTE001",
+    "data": "2018-12-12T04:04:15.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364885,
+    "longitude": -51.4699223,
+    "ignicao": false
+  },
+  {
+    "id": 30,
+    "placa": "TESTE001",
+    "data": "2018-12-12T04:34:18.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364896,
+    "longitude": -51.4699111,
+    "ignicao": false
+  },
+  {
+    "id": 31,
+    "placa": "TESTE001",
+    "data": "2018-12-12T05:04:22.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364846,
+    "longitude": -51.469953,
+    "ignicao": false
+  },
+  {
+    "id": 32,
+    "placa": "TESTE001",
+    "data": "2018-12-12T05:34:26.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649141,
+    "longitude": -51.4699506,
+    "ignicao": false
+  },
+  {
+    "id": 33,
+    "placa": "TESTE001",
+    "data": "2018-12-12T06:04:29.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648976,
+    "longitude": -51.4698788,
+    "ignicao": false
+  },
+  {
+    "id": 34,
+    "placa": "TESTE001",
+    "data": "2018-12-12T06:34:32.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648943,
+    "longitude": -51.4699216,
+    "ignicao": false
+  },
+  {
+    "id": 35,
+    "placa": "TESTE001",
+    "data": "2018-12-12T07:04:35.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648238,
+    "longitude": -51.4699051,
+    "ignicao": false
+  },
+  {
+    "id": 36,
+    "placa": "TESTE001",
+    "data": "2018-12-12T07:34:38.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649338,
+    "longitude": -51.4699125,
+    "ignicao": false
+  },
+  {
+    "id": 37,
+    "placa": "TESTE001",
+    "data": "2018-12-12T08:04:42.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648955,
+    "longitude": -51.4698938,
+    "ignicao": false
+  },
+  {
+    "id": 38,
+    "placa": "TESTE001",
+    "data": "2018-12-12T08:34:45.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364886,
+    "longitude": -51.4699118,
+    "ignicao": false
+  },
+  {
+    "id": 39,
+    "placa": "TESTE001",
+    "data": "2018-12-12T09:04:48.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364897,
+    "longitude": -51.4699666,
+    "ignicao": false
+  },
+  {
+    "id": 40,
+    "placa": "TESTE001",
+    "data": "2018-12-12T09:34:51.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649003,
+    "longitude": -51.4699385,
+    "ignicao": false
+  },
+  {
+    "id": 41,
+    "placa": "TESTE001",
+    "data": "2018-12-12T10:04:54.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649003,
+    "longitude": -51.4699273,
+    "ignicao": false
+  },
+  {
+    "id": 42,
+    "placa": "TESTE001",
+    "data": "2018-12-12T10:34:57.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649311,
+    "longitude": -51.4699368,
+    "ignicao": false
+  },
+  {
+    "id": 43,
+    "placa": "TESTE001",
+    "data": "2018-12-12T11:04:59.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649196,
+    "longitude": -51.4699168,
+    "ignicao": false
+  },
+  {
+    "id": 44,
+    "placa": "TESTE001",
+    "data": "2018-12-12T11:35:02.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649506,
+    "longitude": -51.46992,
+    "ignicao": false
+  },
+  {
+    "id": 45,
+    "placa": "TESTE001",
+    "data": "2018-12-12T12:05:05.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649246,
+    "longitude": -51.4699121,
+    "ignicao": false
+  },
+  {
+    "id": 46,
+    "placa": "TESTE001",
+    "data": "2018-12-12T12:35:08.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649085,
+    "longitude": -51.469902,
+    "ignicao": false
+  },
+  {
+    "id": 47,
+    "placa": "TESTE001",
+    "data": "2018-12-12T13:05:11.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649175,
+    "longitude": -51.469938,
+    "ignicao": false
+  },
+  {
+    "id": 48,
+    "placa": "TESTE001",
+    "data": "2018-12-12T13:35:14.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648926,
+    "longitude": -51.4699128,
+    "ignicao": false
+  },
+  {
+    "id": 49,
+    "placa": "TESTE001",
+    "data": "2018-12-12T14:05:17.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649296,
+    "longitude": -51.4698916,
+    "ignicao": false
+  },
+  {
+    "id": 50,
+    "placa": "TESTE001",
+    "data": "2018-12-12T14:35:20.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649388,
+    "longitude": -51.4699536,
+    "ignicao": false
+  },
+  {
+    "id": 51,
+    "placa": "TESTE001",
+    "data": "2018-12-12T15:05:23.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648968,
+    "longitude": -51.4699221,
+    "ignicao": false
+  },
+  {
+    "id": 52,
+    "placa": "TESTE001",
+    "data": "2018-12-12T15:35:26.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649516,
+    "longitude": -51.4699671,
+    "ignicao": false
+  },
+  {
+    "id": 53,
+    "placa": "TESTE001",
+    "data": "2018-12-12T16:05:29.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364873,
+    "longitude": -51.4699553,
+    "ignicao": false
+  },
+  {
+    "id": 54,
+    "placa": "TESTE001",
+    "data": "2018-12-12T16:35:32.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648641,
+    "longitude": -51.4699805,
+    "ignicao": false
+  },
+  {
+    "id": 55,
+    "placa": "TESTE001",
+    "data": "2018-12-12T17:05:35.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649055,
+    "longitude": -51.4699333,
+    "ignicao": false
+  },
+  {
+    "id": 56,
+    "placa": "TESTE001",
+    "data": "2018-12-12T17:35:38.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649446,
+    "longitude": -51.4699341,
+    "ignicao": false
+  },
+  {
+    "id": 57,
+    "placa": "TESTE001",
+    "data": "2018-12-12T18:05:42.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649171,
+    "longitude": -51.4699285,
+    "ignicao": false
+  },
+  {
+    "id": 58,
+    "placa": "TESTE001",
+    "data": "2018-12-12T18:35:45.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649151,
+    "longitude": -51.4699415,
+    "ignicao": false
+  },
+  {
+    "id": 59,
+    "placa": "TESTE001",
+    "data": "2018-12-12T19:05:49.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649021,
+    "longitude": -51.4698828,
+    "ignicao": false
+  },
+  {
+    "id": 60,
+    "placa": "TESTE001",
+    "data": "2018-12-12T19:35:52.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649736,
+    "longitude": -51.4699023,
+    "ignicao": false
+  },
+  {
+    "id": 61,
+    "placa": "TESTE001",
+    "data": "2018-12-12T20:05:55.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648981,
+    "longitude": -51.4699301,
+    "ignicao": false
+  },
+  {
+    "id": 62,
+    "placa": "TESTE001",
+    "data": "2018-12-12T20:35:58.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364889,
+    "longitude": -51.4699111,
+    "ignicao": false
+  },
+  {
+    "id": 63,
+    "placa": "TESTE001",
+    "data": "2018-12-12T21:06:01.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648716,
+    "longitude": -51.4699213,
+    "ignicao": false
+  },
+  {
+    "id": 64,
+    "placa": "TESTE001",
+    "data": "2018-12-12T21:36:04.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648638,
+    "longitude": -51.4698893,
+    "ignicao": false
+  },
+  {
+    "id": 65,
+    "placa": "TESTE001",
+    "data": "2018-12-12T22:06:07.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649015,
+    "longitude": -51.4698735,
+    "ignicao": false
+  },
+  {
+    "id": 66,
+    "placa": "TESTE001",
+    "data": "2018-12-12T22:36:10.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364922,
+    "longitude": -51.4699235,
+    "ignicao": false
+  },
+  {
+    "id": 67,
+    "placa": "TESTE001",
+    "data": "2018-12-12T23:06:13.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649245,
+    "longitude": -51.4699446,
+    "ignicao": false
+  },
+  {
+    "id": 68,
+    "placa": "TESTE001",
+    "data": "2018-12-12T23:36:16.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364921,
+    "longitude": -51.4699275,
+    "ignicao": false
+  },
+  {
+    "id": 69,
+    "placa": "TESTE001",
+    "data": "2018-12-13T00:06:19.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648861,
+    "longitude": -51.4699225,
+    "ignicao": false
+  },
+  {
+    "id": 70,
+    "placa": "TESTE001",
+    "data": "2018-12-13T00:36:21.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648996,
+    "longitude": -51.4699201,
+    "ignicao": false
+  },
+  {
+    "id": 71,
+    "placa": "TESTE001",
+    "data": "2018-12-13T01:06:25.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648771,
+    "longitude": -51.4698895,
+    "ignicao": false
+  },
+  {
+    "id": 72,
+    "placa": "TESTE001",
+    "data": "2018-12-13T01:36:28.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649048,
+    "longitude": -51.4698733,
+    "ignicao": false
+  },
+  {
+    "id": 73,
+    "placa": "TESTE001",
+    "data": "2018-12-13T02:06:31.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649083,
+    "longitude": -51.4699545,
+    "ignicao": false
+  },
+  {
+    "id": 74,
+    "placa": "TESTE001",
+    "data": "2018-12-13T02:36:34.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648861,
+    "longitude": -51.4699038,
+    "ignicao": false
+  },
+  {
+    "id": 75,
+    "placa": "TESTE001",
+    "data": "2018-12-13T03:06:37.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648535,
+    "longitude": -51.4699203,
+    "ignicao": false
+  },
+  {
+    "id": 76,
+    "placa": "TESTE001",
+    "data": "2018-12-13T03:36:40.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648973,
+    "longitude": -51.4699281,
+    "ignicao": false
+  },
+  {
+    "id": 77,
+    "placa": "TESTE001",
+    "data": "2018-12-13T04:06:44.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648775,
+    "longitude": -51.469911,
+    "ignicao": false
+  },
+  {
+    "id": 78,
+    "placa": "TESTE001",
+    "data": "2018-12-13T04:36:47.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649093,
+    "longitude": -51.469942,
+    "ignicao": false
+  },
+  {
+    "id": 79,
+    "placa": "TESTE001",
+    "data": "2018-12-13T05:06:50.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649156,
+    "longitude": -51.4699666,
+    "ignicao": false
+  },
+  {
+    "id": 80,
+    "placa": "TESTE001",
+    "data": "2018-12-13T05:36:53.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648976,
+    "longitude": -51.4699606,
+    "ignicao": false
+  },
+  {
+    "id": 81,
+    "placa": "TESTE001",
+    "data": "2018-12-13T06:06:56.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649788,
+    "longitude": -51.4699236,
+    "ignicao": false
+  },
+  {
+    "id": 82,
+    "placa": "TESTE001",
+    "data": "2018-12-13T06:36:59.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648965,
+    "longitude": -51.4699591,
+    "ignicao": false
+  },
+  {
+    "id": 83,
+    "placa": "TESTE001",
+    "data": "2018-12-13T07:07:01.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648581,
+    "longitude": -51.4699126,
+    "ignicao": false
+  },
+  {
+    "id": 84,
+    "placa": "TESTE001",
+    "data": "2018-12-13T07:37:04.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649603,
+    "longitude": -51.4699108,
+    "ignicao": false
+  },
+  {
+    "id": 85,
+    "placa": "TESTE001",
+    "data": "2018-12-13T08:07:07.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.36492,
+    "longitude": -51.46988,
+    "ignicao": false
+  },
+  {
+    "id": 86,
+    "placa": "TESTE001",
+    "data": "2018-12-13T08:37:10.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649313,
+    "longitude": -51.4699468,
+    "ignicao": false
+  },
+  {
+    "id": 87,
+    "placa": "TESTE001",
+    "data": "2018-12-13T09:07:13.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649275,
+    "longitude": -51.4699435,
+    "ignicao": false
+  },
+  {
+    "id": 88,
+    "placa": "TESTE001",
+    "data": "2018-12-13T09:37:16.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648921,
+    "longitude": -51.4699078,
+    "ignicao": false
+  },
+  {
+    "id": 89,
+    "placa": "TESTE001",
+    "data": "2018-12-13T10:07:19.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649106,
+    "longitude": -51.469928,
+    "ignicao": false
+  },
+  {
+    "id": 90,
+    "placa": "TESTE001",
+    "data": "2018-12-13T10:37:21.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649186,
+    "longitude": -51.469958,
+    "ignicao": false
+  },
+  {
+    "id": 91,
+    "placa": "TESTE001",
+    "data": "2018-12-13T11:07:24.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364874,
+    "longitude": -51.4699256,
+    "ignicao": false
+  },
+  {
+    "id": 92,
+    "placa": "TESTE001",
+    "data": "2018-12-13T11:37:27.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648606,
+    "longitude": -51.4699675,
+    "ignicao": false
+  },
+  {
+    "id": 93,
+    "placa": "TESTE001",
+    "data": "2018-12-13T12:07:30.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364945,
+    "longitude": -51.4699991,
+    "ignicao": false
+  },
+  {
+    "id": 94,
+    "placa": "TESTE001",
+    "data": "2018-12-13T12:37:33.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649006,
+    "longitude": -51.4699531,
+    "ignicao": false
+  },
+  {
+    "id": 95,
+    "placa": "TESTE001",
+    "data": "2018-12-13T13:07:36.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648865,
+    "longitude": -51.4699123,
+    "ignicao": false
+  },
+  {
+    "id": 96,
+    "placa": "TESTE001",
+    "data": "2018-12-13T13:37:39.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648901,
+    "longitude": -51.4699135,
+    "ignicao": false
+  },
+  {
+    "id": 97,
+    "placa": "TESTE001",
+    "data": "2018-12-13T14:07:43.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649675,
+    "longitude": -51.4699678,
+    "ignicao": false
+  },
+  {
+    "id": 98,
+    "placa": "TESTE001",
+    "data": "2018-12-13T14:37:46.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364934,
+    "longitude": -51.4699683,
+    "ignicao": false
+  },
+  {
+    "id": 99,
+    "placa": "TESTE001",
+    "data": "2018-12-13T15:07:49.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364874,
+    "longitude": -51.4699355,
+    "ignicao": false
+  },
+  {
+    "id": 100,
+    "placa": "TESTE001",
+    "data": "2018-12-13T15:37:52.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649676,
+    "longitude": -51.4699716,
+    "ignicao": false
+  },
+  {
+    "id": 101,
+    "placa": "TESTE001",
+    "data": "2018-12-13T16:07:55.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648706,
+    "longitude": -51.4699243,
+    "ignicao": false
+  },
+  {
+    "id": 102,
+    "placa": "TESTE001",
+    "data": "2018-12-13T16:37:58.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648628,
+    "longitude": -51.4700285,
+    "ignicao": false
+  },
+  {
+    "id": 103,
+    "placa": "TESTE001",
+    "data": "2018-12-13T17:08:02.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649066,
+    "longitude": -51.469924,
+    "ignicao": false
+  },
+  {
+    "id": 104,
+    "placa": "TESTE001",
+    "data": "2018-12-13T17:38:05.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364933,
+    "longitude": -51.4699498,
+    "ignicao": false
+  },
+  {
+    "id": 105,
+    "placa": "TESTE001",
+    "data": "2018-12-13T18:08:08.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649296,
+    "longitude": -51.4699256,
+    "ignicao": false
+  },
+  {
+    "id": 106,
+    "placa": "TESTE001",
+    "data": "2018-12-13T18:38:11.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649261,
+    "longitude": -51.4699331,
+    "ignicao": false
+  },
+  {
+    "id": 107,
+    "placa": "TESTE001",
+    "data": "2018-12-13T19:08:14.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649083,
+    "longitude": -51.469937,
+    "ignicao": false
+  },
+  {
+    "id": 108,
+    "placa": "TESTE001",
+    "data": "2018-12-13T19:38:17.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648966,
+    "longitude": -51.4699813,
+    "ignicao": false
+  },
+  {
+    "id": 109,
+    "placa": "TESTE001",
+    "data": "2018-12-13T20:08:20.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649361,
+    "longitude": -51.4698716,
+    "ignicao": false
+  },
+  {
+    "id": 110,
+    "placa": "TESTE001",
+    "data": "2018-12-13T20:38:23.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648731,
+    "longitude": -51.4699578,
+    "ignicao": false
+  },
+  {
+    "id": 111,
+    "placa": "TESTE001",
+    "data": "2018-12-13T21:08:26.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648646,
+    "longitude": -51.4699211,
+    "ignicao": false
+  },
+  {
+    "id": 112,
+    "placa": "TESTE001",
+    "data": "2018-12-13T21:38:29.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648618,
+    "longitude": -51.4699006,
+    "ignicao": false
+  },
+  {
+    "id": 113,
+    "placa": "TESTE001",
+    "data": "2018-12-13T22:08:32.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648846,
+    "longitude": -51.4699216,
+    "ignicao": false
+  },
+  {
+    "id": 114,
+    "placa": "TESTE001",
+    "data": "2018-12-13T22:38:35.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364945,
+    "longitude": -51.4699343,
+    "ignicao": false
+  },
+  {
+    "id": 115,
+    "placa": "TESTE001",
+    "data": "2018-12-13T23:08:38.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648933,
+    "longitude": -51.4699181,
+    "ignicao": false
+  },
+  {
+    "id": 116,
+    "placa": "TESTE001",
+    "data": "2018-12-13T23:38:41.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648806,
+    "longitude": -51.4699303,
+    "ignicao": false
+  },
+  {
+    "id": 117,
+    "placa": "TESTE001",
+    "data": "2018-12-14T00:08:44.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648836,
+    "longitude": -51.4699323,
+    "ignicao": false
+  },
+  {
+    "id": 118,
+    "placa": "TESTE001",
+    "data": "2018-12-14T00:38:47.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648863,
+    "longitude": -51.4699251,
+    "ignicao": false
+  },
+  {
+    "id": 119,
+    "placa": "TESTE001",
+    "data": "2018-12-14T01:08:50.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648528,
+    "longitude": -51.4699088,
+    "ignicao": false
+  },
+  {
+    "id": 120,
+    "placa": "TESTE001",
+    "data": "2018-12-14T01:38:53.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649138,
+    "longitude": -51.4699313,
+    "ignicao": false
+  },
+  {
+    "id": 121,
+    "placa": "TESTE001",
+    "data": "2018-12-14T02:08:56.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648993,
+    "longitude": -51.469933,
+    "ignicao": false
+  },
+  {
+    "id": 122,
+    "placa": "TESTE001",
+    "data": "2018-12-14T02:38:58.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648641,
+    "longitude": -51.4698688,
+    "ignicao": false
+  },
+  {
+    "id": 123,
+    "placa": "TESTE001",
+    "data": "2018-12-14T03:09:00.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649343,
+    "longitude": -51.4699373,
+    "ignicao": false
+  },
+  {
+    "id": 124,
+    "placa": "TESTE001",
+    "data": "2018-12-14T03:39:03.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648891,
+    "longitude": -51.4698966,
+    "ignicao": false
+  },
+  {
+    "id": 125,
+    "placa": "TESTE001",
+    "data": "2018-12-14T04:09:07.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649325,
+    "longitude": -51.4699285,
+    "ignicao": false
+  },
+  {
+    "id": 126,
+    "placa": "TESTE001",
+    "data": "2018-12-14T04:39:10.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649,
+    "longitude": -51.4699075,
+    "ignicao": false
+  },
+  {
+    "id": 127,
+    "placa": "TESTE001",
+    "data": "2018-12-14T05:09:13.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649213,
+    "longitude": -51.4699276,
+    "ignicao": false
+  },
+  {
+    "id": 128,
+    "placa": "TESTE001",
+    "data": "2018-12-14T05:39:16.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649025,
+    "longitude": -51.4699506,
+    "ignicao": false
+  },
+  {
+    "id": 129,
+    "placa": "TESTE001",
+    "data": "2018-12-14T06:09:18.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649203,
+    "longitude": -51.4699058,
+    "ignicao": false
+  },
+  {
+    "id": 130,
+    "placa": "TESTE001",
+    "data": "2018-12-14T06:39:22.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648626,
+    "longitude": -51.4698996,
+    "ignicao": false
+  },
+  {
+    "id": 131,
+    "placa": "TESTE001",
+    "data": "2018-12-14T07:09:25.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648803,
+    "longitude": -51.469876,
+    "ignicao": false
+  },
+  {
+    "id": 132,
+    "placa": "TESTE001",
+    "data": "2018-12-14T07:39:28.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649125,
+    "longitude": -51.4699198,
+    "ignicao": false
+  },
+  {
+    "id": 133,
+    "placa": "TESTE001",
+    "data": "2018-12-14T08:09:32.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364918,
+    "longitude": -51.4699398,
+    "ignicao": false
+  },
+  {
+    "id": 134,
+    "placa": "TESTE001",
+    "data": "2018-12-14T08:39:35.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648658,
+    "longitude": -51.469995,
+    "ignicao": false
+  },
+  {
+    "id": 135,
+    "placa": "TESTE001",
+    "data": "2018-12-14T09:09:38.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648808,
+    "longitude": -51.4699478,
+    "ignicao": false
+  },
+  {
+    "id": 136,
+    "placa": "TESTE001",
+    "data": "2018-12-14T09:39:41.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648953,
+    "longitude": -51.469888,
+    "ignicao": false
+  },
+  {
+    "id": 137,
+    "placa": "TESTE001",
+    "data": "2018-12-14T10:09:43.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649106,
+    "longitude": -51.4699531,
+    "ignicao": false
+  },
+  {
+    "id": 138,
+    "placa": "TESTE001",
+    "data": "2018-12-14T10:39:46.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648886,
+    "longitude": -51.46991,
+    "ignicao": false
+  },
+  {
+    "id": 139,
+    "placa": "TESTE001",
+    "data": "2018-12-14T11:09:49.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648583,
+    "longitude": -51.4699768,
+    "ignicao": false
+  },
+  {
+    "id": 140,
+    "placa": "TESTE001",
+    "data": "2018-12-14T11:39:52.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648736,
+    "longitude": -51.4699736,
+    "ignicao": false
+  },
+  {
+    "id": 141,
+    "placa": "TESTE001",
+    "data": "2018-12-14T12:09:55.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648908,
+    "longitude": -51.4698985,
+    "ignicao": false
+  },
+  {
+    "id": 142,
+    "placa": "TESTE001",
+    "data": "2018-12-14T12:39:58.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649115,
+    "longitude": -51.4699571,
+    "ignicao": false
+  },
+  {
+    "id": 143,
+    "placa": "TESTE001",
+    "data": "2018-12-14T13:10:01.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648943,
+    "longitude": -51.4698888,
+    "ignicao": false
+  },
+  {
+    "id": 144,
+    "placa": "TESTE001",
+    "data": "2018-12-14T13:40:04.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648446,
+    "longitude": -51.4699575,
+    "ignicao": false
+  },
+  {
+    "id": 145,
+    "placa": "TESTE001",
+    "data": "2018-12-14T14:10:07.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649028,
+    "longitude": -51.46994,
+    "ignicao": false
+  },
+  {
+    "id": 146,
+    "placa": "TESTE001",
+    "data": "2018-12-14T14:40:10.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364928,
+    "longitude": -51.4700176,
+    "ignicao": false
+  },
+  {
+    "id": 147,
+    "placa": "TESTE001",
+    "data": "2018-12-14T15:10:13.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648618,
+    "longitude": -51.4699388,
+    "ignicao": false
+  },
+  {
+    "id": 148,
+    "placa": "TESTE001",
+    "data": "2018-12-14T15:40:16.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648881,
+    "longitude": -51.4700676,
+    "ignicao": false
+  },
+  {
+    "id": 149,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:10:19.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364868,
+    "longitude": -51.4699241,
+    "ignicao": false
+  },
+  {
+    "id": 150,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:40:22.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649655,
+    "longitude": -51.4699741,
+    "ignicao": false
+  },
+  {
+    "id": 151,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:43:07.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3648951,
+    "longitude": -51.469969,
+    "ignicao": true
+  },
+  {
+    "id": 152,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:45:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649545,
+    "longitude": -51.4699006,
+    "ignicao": true
+  },
+  {
+    "id": 153,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:47:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.364975,
+    "longitude": -51.469917,
+    "ignicao": true
+  },
+  {
+    "id": 154,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:49:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649688,
+    "longitude": -51.4699336,
+    "ignicao": true
+  },
+  {
+    "id": 155,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:51:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649633,
+    "longitude": -51.4699423,
+    "ignicao": true
+  },
+  {
+    "id": 156,
+    "placa": "TESTE001",
+    "data": "2018-12-14T16:53:06.000+00:00",
+    "velocidade": 0,
+    "latitude": -25.3649808,
+    "longitude": -51.4699488,
+    "ignicao": true
+  }
+  ]

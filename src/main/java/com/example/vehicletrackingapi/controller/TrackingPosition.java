@@ -1,10 +1,10 @@
 package com.example.vehicletrackingapi.controller;
 
-import com.example.vehicletrackingapi.client.ExternalApiClient;
+import com.example.vehicletrackingapi.model.dto.Response;
+import com.example.vehicletrackingapi.service.CountTimePosition;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -13,15 +13,10 @@ import java.util.List;
 public class TrackingPosition {
 
     @Autowired
-    private ExternalApiClient externalApiClient;
+    private CountTimePosition countTimePosition;
 
-    @GetMapping("/placas")
-    public List<String> getPlacas() {
-        return externalApiClient.getPlacas();
-    }
-
-    @GetMapping("/position")
-    public ResponseEntity<String> getPosition() {
-       return ResponseEntity.status(HttpStatus.OK).body("hello word");
+    @GetMapping("/position/placa/{placa}/data/{data}")
+    public List<Response> getPosition(@PathVariable String placa, @PathVariable String data) {
+        return countTimePosition.getTimesByPOI(placa, data);
     }
 }

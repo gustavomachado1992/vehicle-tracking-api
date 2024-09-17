@@ -19,15 +19,6 @@ public class ExternalApiClient {
         this.webClient = webClientBuilder.baseUrl("https://challenge-backend.mobi7.io").build();
     }
 
-    // lista de placas
-    public List<String> getPlacas() {
-        return webClient.get()
-                .uri("/posicao/placas")
-                .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<List<String>>() {})
-                .block();  // Executa a chamada de forma síncrona
-    }
-
     // posição de todos os veículos
     public List<Posicao> getPosicaoVeiculos() {
         return webClient.get()
@@ -55,15 +46,6 @@ public class ExternalApiClient {
                 .block();
     }
 
-    // detalhes de um POI específico
-    public PointOfInterest getPontoDeInteressePorId(String poi) {
-        return webClient.get()
-                .uri("/pois/{poi}", poi)
-                .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<PointOfInterest>() {})
-                .block();
-    }
-
     private String buildUri(String placa, String data) {
         StringBuilder uriBuilder = new StringBuilder("/posicao");
 
@@ -76,7 +58,8 @@ public class ExternalApiClient {
                 if (placa != null) {
                     uriBuilder.append("&");
                 }
-                uriBuilder.append("data=").append(data);
+                String dataFormat = data.replaceAll("-",  "/") ;
+                uriBuilder.append("data=").append(dataFormat);
             }
         }
 
