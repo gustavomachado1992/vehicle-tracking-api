@@ -3,9 +3,7 @@ package com.example.vehicletrackingapi.controller;
 import com.example.vehicletrackingapi.model.dto.Response;
 import com.example.vehicletrackingapi.service.CountTimePosition;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,8 +13,11 @@ public class TrackingPosition {
     @Autowired
     private CountTimePosition countTimePosition;
 
-    @GetMapping("/position/placa/{placa}/data/{data}")
-    public List<Response> getPosition(@PathVariable String placa, @PathVariable String data) {
+    @GetMapping("/position")
+    @CrossOrigin(origins = "http://localhost:4500")
+    public List<Response> getPositionAll(
+            @RequestParam(value = "placa", required = false) String placa,
+            @RequestParam(value = "data", required = false) String data) {
         return countTimePosition.getTimesByPOI(placa, data);
     }
 }

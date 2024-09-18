@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>vehicle-tracking-api</artifactId>
@@ -69,9 +69,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-main</artifactId>
+            <version>22.2</version>
+        </dependency>
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>geotools-repo</id>
+            <url>https://repo.osgeo.org/repository/release/</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>

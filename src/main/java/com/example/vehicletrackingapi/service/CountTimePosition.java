@@ -5,6 +5,7 @@ import com.example.vehicletrackingapi.model.dto.PointOfInterest;
 import com.example.vehicletrackingapi.model.dto.Posicao;
 import com.example.vehicletrackingapi.model.dto.Response;
 import lombok.RequiredArgsConstructor;
+import org.geotools.referencing.GeodeticCalculator;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,17 +21,22 @@ public class CountTimePosition {
     private final ExternalApiClient externalApiClient;
     private List<PointOfInterest> pointOfInterest = new ArrayList<>();
     //TODO
-    public List<Response> getTimesByPOI() {
-        var posicoesPorPlaca = externalApiClient.getPosicaoVeiculos().stream()
-                .collect(Collectors.groupingBy(Posicao::getPlaca));
+    public List<Response> getTimesByPOI(String placa, String data) {
+        var posicoesPorPlaca = externalApiClient.getPosicaoPorPlacaEData(placa, data).stream()
+                .collect(Collectors.groupingBy(Posicao::getPlaca))
+                .values().stream()
+                .map(positions -> getTimesByPOI(positions.get(0).getPlaca(), positions))
+                .flatMap(List::stream)
+                .toList();
 
-        return List.of();
+        return posicoesPorPlaca;
     }
 
-    public List<Response> getTimesByPOI(String placa, String data) {
+    public List<Response> getTimesByPOI(String placa, List<Posicao> positions) {
         pointOfInterest = pointOfInterest.isEmpty() ? externalApiClient.getPontosDeInteresse() : pointOfInterest;
-        return externalApiClient.getPosicaoPorPlacaEData(placa, data).stream()
+        return positions.stream()
                 .map(this::findPoiName)
+                .flatMap(List::stream)
                 .filter(Objects::nonNull)
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream()
@@ -43,18 +49,23 @@ public class CountTimePosition {
                 .collect(Collectors.toList());
     }
 
-    private String findPoiName(Posicao posicao) {
+    private List<String> findPoiName(Posicao posicao) {
+        System.out.println(pointOfInterest);
         return pointOfInterest.stream()
                 .filter(poi -> insidePOI(poi, posicao))
-                .findFirst()
                 .map(PointOfInterest::getNome)
-                .orElse(null);
+                .toList();
     }
 
-    private boolean insidePOI(PointOfInterest poi, Posicao posicao) {
-        double dLat = posicao.getLatitude() - poi.getLatitude();
-        double dLon = posicao.getLongitude() - poi.getLongitude();
 
-        return Math.sqrt(dLat * dLat + dLon * dLon) <= poi.getRaio();
+    public static boolean insidePOI(PointOfInterest poi, Posicao posicao) {
+        GeodeticCalculator calculator = new GeodeticCalculator();
+        calculator.setStartingGeographicPoint(poi.getLatitude(), poi.getLongitude());  // Definindo ponto central
+        calculator.setDestinationGeographicPoint(posicao.getLatitude(), posicao.getLongitude()); // Definindo ponto a verificar
+
+        double distance = calculator.getOrthodromicDistance(); // Distância em km
+        System.out.println(poi.getNome());
+        return distance <= poi.getRaio();
     }
+
 }
