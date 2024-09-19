@@ -1,4 +1,4 @@
-package com.example.vehicletrackingapi.model.dto;
+package com.example.vehicletrackingapi.model;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,7 +1,8 @@
 package com.example.vehicletrackingapi.client;
 
-import com.example.vehicletrackingapi.model.dto.PointOfInterest;
-import com.example.vehicletrackingapi.model.dto.Posicao;
+import com.example.vehicletrackingapi.model.PointOfInterest;
+import com.example.vehicletrackingapi.model.Position;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
@@ -10,6 +11,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class ExternalApiClient {
 
     private final WebClient webClient;
@@ -19,26 +21,15 @@ public class ExternalApiClient {
         this.webClient = webClientBuilder.baseUrl("https://challenge-backend.mobi7.io").build();
     }
 
-    // posição de todos os veículos
-    public List<Posicao> getPosicaoVeiculos() {
-        return webClient.get()
-                .uri("/posicao")
-                .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<List<Posicao>>() {})
-                .block();
-    }
-
-    // posição de um veículo específico em uma data
-    public List<Posicao> getPosicaoPorPlacaEData(String placa, String data) {
+    public List<Position> getPositionByPlateAndDate(String placa, String data) {
         return webClient.get()
                 .uri(buildUri(placa, data))
                 .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<List<Posicao>>() {})
+                .bodyToMono(new ParameterizedTypeReference<List<Position>>() {})
                 .block();
     }
 
-    // lista de pontos de interesse (POIs)
-    public List<PointOfInterest> getPontosDeInteresse() {
+    public List<PointOfInterest> getPOI() {
         return webClient.get()
                 .uri("/pois")
                 .retrieve()
@@ -46,7 +37,7 @@ public class ExternalApiClient {
                 .block();
     }
 
-    private String buildUri(String placa, String data) {
+    String buildUri(String placa, String data) {
         StringBuilder uriBuilder = new StringBuilder("/posicao");
 
         if (placa != null || data != null) {

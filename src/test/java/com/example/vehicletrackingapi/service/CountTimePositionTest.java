@@ -1,20 +1,21 @@
 package com.example.vehicletrackingapi.service;
 
 import com.example.vehicletrackingapi.client.ExternalApiClient;
-import com.example.vehicletrackingapi.model.dto.Posicao;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.example.vehicletrackingapi.model.dto.Response;
+import com.example.vehicletrackingapi.model.PointOfInterest;
+import com.example.vehicletrackingapi.model.Position;
+import com.example.vehicletrackingapi.model.Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -27,32 +28,103 @@ public class CountTimePositionTest {
     private CountTimePosition countTimePosition;
 
     @Test
-    public void getTimesByPOI() {
+    public void testGetTimesByPOI_SinglePosition() {
+        String placa = "TESTE001";
+        String data = "2023-09-10T10:00:00Z";
+
+        List<Position> positions = Arrays.asList(
+                buildPosition(placa, data, -25.5244493, -51.549662)
+        );
+        List<PointOfInterest> pois = Collections.singletonList(
+                buildPointOfInterest()
+        );
+
+        when(externalApiClient.getPositionByPlateAndDate(placa, data)).thenReturn(positions);
+        when(externalApiClient.getPOI()).thenReturn(pois);
+
+        List<Response> responses = countTimePosition.getTimesByPOI(placa, data);
+
+        List<Response> expected = new ArrayList<>();
+        assertEquals(expected, responses);
     }
 
     @Test
-    public void testGetTimesByPOI() {
-        String placa = "test1";
-        String data = "";
-        List<Posicao> posicoes = new ArrayList<>();
-        posicoes.add(buildPosition(-25.3649196, -51.4699168));
-        posicoes.add(buildPosition(-25.3649196, -51.46992));
-        posicoes.add(buildPosition(0, 0));
+    public void testGetTimesByPOI_MultiplePositions() {
+        String placa = "TESTE002";
+        String data = "2023-09-10T10:00:00Z";
 
-        when(externalApiClient.getPosicaoPorPlacaEData(placa, data)).thenReturn(posicoes);
+        List<Position> positions = Arrays.asList(
+                buildPosition(placa, "2023-09-10T10:00:00Z", -25.5244493, -51.549662),
+                buildPosition(placa, "2023-09-10T10:05:00Z", -25.5244493, -51.549662)
+        );
 
-        List<Response> response = countTimePosition.getTimesByPOI(placa, data);
+        PointOfInterest poi =  buildPointOfInterest();
 
-        List<Response> expected = List.of(Response.builder().poi("a").tempo(60).placa(placa).build());
+        when(externalApiClient.getPositionByPlateAndDate(placa, data)).thenReturn(positions);
+        when(externalApiClient.getPOI()).thenReturn(Collections.singletonList(poi));
 
-        assertEquals(expected, response);
-        verify(externalApiClient).getPosicaoPorPlacaEData(placa, data);
+        List<Response> responses = countTimePosition.getTimesByPOI(placa, data);
+
+        List<Response> expected = List.of(Response.builder().poi("PONTO 24").tempo(5).placa(placa).build());
+        assertEquals(expected, responses);
+    }
+    @Test
+    public void testGetTimesByPOI_MultiplePositionsWithOnePoi() {
+        String placa = null;
+        String data = "2023-09-10T10:00:00Z";
+
+        List<Position> positions = Arrays.asList(
+            buildPosition("TESTE001", "2023-09-10T10:00:00Z", -25.5244493, -51.549662),
+            buildPosition("TESTE001", "2023-09-10T10:15:00Z", -25.5244493, -51.549662),
+            buildPosition("TESTE001", "2023-09-10T10:20:00Z", -25.0244493, -25.0244493),
+            buildPosition("TESTE002", "2023-09-10T10:05:00Z", -25.0244493, -51.049662)
+        );
+
+        PointOfInterest poi =  buildPointOfInterest();
+
+        when(externalApiClient.getPositionByPlateAndDate(placa, data)).thenReturn(positions);
+        when(externalApiClient.getPOI()).thenReturn(Collections.singletonList(poi));
+
+        List<Response> responses = countTimePosition.getTimesByPOI(null, data);
+
+        List<Response> expected = List.of(Response.builder().poi("PONTO 24").tempo(15).placa("TESTE001").build());
+        assertEquals(expected, responses);
+    }
+    @Test
+    public void testInsidePOI() {
+        PointOfInterest poi = buildPointOfInterest();
+        Position position = buildPosition("TESTE001", "2023-09-10T10:00:00Z", -25.5244493, -51.549662);
+
+        boolean result = CountTimePosition.insidePOI(poi, position);
+
+        assertTrue(result);
     }
 
-    private static Posicao buildPosition(double lat, double lon) {
-        return Posicao.builder()
+    @Test
+    public void testNotInsidePOI() {
+        PointOfInterest poi = buildPointOfInterest();
+        Position position =  buildPosition("TESTE001", "2023-09-10T10:00:00Z", -25.5000000, -51.5000000);
+        boolean result = CountTimePosition.insidePOI(poi, position);
+
+        assertFalse(result);
+    }
+
+    private static Position buildPosition(String placa, String date, double lat, double lon) {
+        return Position.builder()
+                .placa(placa)
+                .data(date)
                 .latitude(lat)
                 .longitude(lon)
+                .ignicao(false)
+                .velocidade(5)
+                .build();
+    }
+    private static PointOfInterest buildPointOfInterest() {
+        return PointOfInterest.builder()
+                .nome("PONTO 24")
+                .raio(350)
+                .latitude(-25.5244493)
+                .longitude(-51.549662)
                 .build();
     }
 }

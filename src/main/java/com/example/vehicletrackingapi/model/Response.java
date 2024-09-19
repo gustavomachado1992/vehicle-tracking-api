@@ -1,4 +1,4 @@
-package com.example.vehicletrackingapi.model.dto;
+package com.example.vehicletrackingapi.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +9,6 @@ public class Response {
 
     private String placa;
     private String poi;
-    private int tempo;
+    private long tempo;
 
 }

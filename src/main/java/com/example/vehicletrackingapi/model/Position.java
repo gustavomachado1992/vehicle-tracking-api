@@ -1,11 +1,11 @@
-package com.example.vehicletrackingapi.model.dto;
+package com.example.vehicletrackingapi.model;
 
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class Posicao {
+public class Position {
 
     private String placa;
     private String data;
