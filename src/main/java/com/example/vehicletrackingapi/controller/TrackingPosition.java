@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class TrackingPosition {
 
     @Autowired
     private CountTimePosition countTimePosition;
 
     @GetMapping("/position")
-    @CrossOrigin(origins = "http://localhost:4200")
     public List<Response> getPositionAll(
             @RequestParam(value = "placa", required = false) String placa,
             @RequestParam(value = "data", required = false) String data) {

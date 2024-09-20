@@ -25,8 +25,8 @@ public class CountTimePosition {
     public List<Response> getTimesByPOI(String placa, String data) {
         return externalApiClient.getPositionByPlateAndDate(placa, data).stream()
                 .collect(Collectors.groupingBy(Position::getPlaca))
-                .values().stream()
-                .map(positions -> getTimesByPOI(positions.get(0).getPlaca(), positions))
+                .entrySet().stream()
+                .map(item -> getTimesByPOI(item.getKey(), item.getValue()))
                 .flatMap(List::stream)
                 .toList();
     }
